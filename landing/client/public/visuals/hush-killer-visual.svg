@@ -1,0 +1,126 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Same payment volume. Different visibility.</title>
+  <desc>Public rails turn repeated payments into an inferable public map; Hush turns the same activity into private state with a narrow scoped receipt outlet.</desc>
+
+  <g id="canvas">
+    <rect width="1600" height="900" fill="#0B0F14"/>
+  </g>
+
+  <g id="header">
+    <text x="800" y="64" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="700" fill="#F8FAFC">Same payment volume. Different visibility.</text>
+    <text x="800" y="96" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="15" fill="#94A3B8">Public rails turn payments into financial intelligence. Hush keeps settlement private and disclosure scoped.</text>
+  </g>
+
+  <g id="panels">
+    <rect x="56" y="132" width="728" height="680" rx="14" fill="#0E141B" stroke="#334155"/>
+    <rect x="816" y="132" width="728" height="680" rx="14" fill="#0C1519" stroke="#0E7490"/>
+    <text x="84" y="172" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="600" fill="#F8FAFC">Public Rails</text>
+    <text x="844" y="172" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="600" fill="#E0F2FE">Hush</text>
+  </g>
+
+  <g id="shared-payment-input">
+    <g id="left-payment-pulses" fill="#CBD5E1">
+      <circle cx="106" cy="238" r="5"/><circle cx="124" cy="238" r="5"/><circle cx="142" cy="238" r="5"/><circle cx="160" cy="238" r="5"/><circle cx="178" cy="238" r="5"/><circle cx="196" cy="238" r="5"/>
+    </g>
+    <g id="right-payment-pulses" fill="#67E8F9">
+      <circle cx="866" cy="238" r="5"/><circle cx="884" cy="238" r="5"/><circle cx="902" cy="238" r="5"/><circle cx="920" cy="238" r="5"/><circle cx="938" cy="238" r="5"/><circle cx="956" cy="238" r="5"/>
+    </g>
+    <line x1="202" y1="238" x2="250" y2="238" stroke="#CBD5E1" stroke-width="1.5"/>
+    <line x1="962" y1="238" x2="1010" y2="238" stroke="#67E8F9" stroke-width="1.5"/>
+  </g>
+
+  <g id="public-rails-side">
+    <g id="public-input-channel" stroke="#CBD5E1" stroke-width="1.4">
+      <line x1="250" y1="238" x2="292" y2="270"/>
+      <line x1="250" y1="238" x2="292" y2="334"/>
+      <line x1="250" y1="238" x2="292" y2="398"/>
+      <line x1="250" y1="238" x2="292" y2="474"/>
+    </g>
+
+    <g id="public-map-growth" fill="none" stroke="#CBD5E1">
+      <g id="map-epoch-1" stroke-width="1" opacity="0.55">
+        <path d="M292 270 L360 250 L420 300 L378 354 L308 336 Z"/>
+        <path d="M292 334 L360 316 L412 370 L344 416 L292 398 Z"/>
+      </g>
+      <g id="map-epoch-2" stroke-width="1.05" opacity="0.68">
+        <path d="M420 300 L506 272 L560 336 L504 404 L412 370 Z"/>
+        <path d="M378 354 L504 404 L468 504 L344 416 Z"/>
+      </g>
+      <g id="map-epoch-3" stroke-width="1.1" opacity="0.8">
+        <path d="M506 272 L628 248 L684 324 L612 418 L560 336 Z"/>
+        <path d="M504 404 L612 418 L636 542 L468 504 Z"/>
+      </g>
+      <g id="map-epoch-4" stroke-width="1.2" opacity="0.92">
+        <path d="M628 248 L736 234 L764 320 L684 324 Z"/>
+        <path d="M612 418 L748 430 L756 574 L636 542 Z"/>
+      </g>
+    </g>
+
+    <g id="public-map-nodes" fill="#111827" stroke="#94A3B8">
+      <circle cx="292" cy="270" r="7"/><circle cx="292" cy="334" r="7"/><circle cx="292" cy="398" r="7"/><circle cx="292" cy="474" r="7"/>
+      <circle cx="360" cy="250" r="7"/><circle cx="420" cy="300" r="7"/><circle cx="378" cy="354" r="7"/><circle cx="412" cy="370" r="7"/>
+      <circle cx="506" cy="272" r="7"/><circle cx="560" cy="336" r="7"/><circle cx="504" cy="404" r="7"/><circle cx="468" cy="504" r="7"/>
+      <circle cx="628" cy="248" r="7"/><circle cx="684" cy="324" r="7"/><circle cx="612" cy="418" r="7"/><circle cx="636" cy="542" r="7"/>
+      <circle cx="736" cy="234" r="7"/><circle cx="748" cy="430" r="7"/><circle cx="756" cy="574" r="7"/>
+    </g>
+
+    <g id="public-leakage" stroke="#EF4444" stroke-width="1.3">
+      <path d="M684 324 C718 306,736 288,752 270"/>
+      <path d="M748 430 C722 436,716 468,752 508"/>
+      <path d="M756 574 C714 598,714 640,752 684"/>
+    </g>
+
+    <g id="public-leakage-endpoints" fill="#111827" stroke="#EF4444">
+      <circle cx="758" cy="264" r="9"/><circle cx="758" cy="514" r="9"/><circle cx="758" cy="692" r="9"/>
+    </g>
+
+    <text x="84" y="772" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="600" fill="#FCA5A5">Public map grows with time</text>
+  </g>
+
+  <g id="hush-side">
+    <g id="hush-private-archive-shell" fill="#082F49" stroke="#0891B2">
+      <rect x="1010" y="208" width="488" height="448" rx="12"/>
+    </g>
+
+    <g id="hush-archive-columns" fill="#0B3A4A" stroke="#0891B2">
+      <rect x="1034" y="236" width="106" height="388" rx="8"/>
+      <rect x="1150" y="236" width="106" height="388" rx="8"/>
+      <rect x="1266" y="236" width="106" height="388" rx="8"/>
+      <rect x="1382" y="236" width="106" height="388" rx="8"/>
+    </g>
+
+    <g id="hush-activity-ingress" stroke="#67E8F9" stroke-width="1.2">
+      <line x1="1010" y1="238" x2="1034" y2="286"/>
+      <line x1="1010" y1="238" x2="1034" y2="350"/>
+      <line x1="1010" y1="238" x2="1034" y2="414"/>
+      <line x1="1010" y1="238" x2="1034" y2="478"/>
+      <line x1="1010" y1="238" x2="1034" y2="542"/>
+    </g>
+
+    <g id="hush-activity-ticks" fill="#67E8F9">
+      <rect x="1064" y="268" width="46" height="6" rx="2"/><rect x="1064" y="320" width="46" height="6" rx="2"/><rect x="1064" y="372" width="46" height="6" rx="2"/><rect x="1064" y="424" width="46" height="6" rx="2"/><rect x="1064" y="476" width="46" height="6" rx="2"/><rect x="1064" y="528" width="46" height="6" rx="2"/>
+      <rect x="1180" y="268" width="46" height="6" rx="2"/><rect x="1180" y="320" width="46" height="6" rx="2"/><rect x="1180" y="372" width="46" height="6" rx="2"/><rect x="1180" y="424" width="46" height="6" rx="2"/><rect x="1180" y="476" width="46" height="6" rx="2"/><rect x="1180" y="528" width="46" height="6" rx="2"/>
+      <rect x="1296" y="268" width="46" height="6" rx="2"/><rect x="1296" y="320" width="46" height="6" rx="2"/><rect x="1296" y="372" width="46" height="6" rx="2"/><rect x="1296" y="424" width="46" height="6" rx="2"/><rect x="1296" y="476" width="46" height="6" rx="2"/><rect x="1296" y="528" width="46" height="6" rx="2"/>
+      <rect x="1412" y="268" width="46" height="6" rx="2"/><rect x="1412" y="320" width="46" height="6" rx="2"/><rect x="1412" y="372" width="46" height="6" rx="2"/><rect x="1412" y="424" width="46" height="6" rx="2"/><rect x="1412" y="476" width="46" height="6" rx="2"/><rect x="1412" y="528" width="46" height="6" rx="2"/>
+    </g>
+
+    <g id="hush-private-state-stack" font-family="JetBrains Mono, Inter, monospace" font-size="10" fill="#CFFAFE">
+      <rect x="1034" y="678" width="106" height="18" rx="4" fill="#082F49" stroke="#0891B2"/><text x="1087" y="691" text-anchor="middle">note</text>
+      <rect x="1150" y="678" width="106" height="18" rx="4" fill="#082F49" stroke="#0891B2"/><text x="1203" y="691" text-anchor="middle">commitment</text>
+      <rect x="1266" y="678" width="106" height="18" rx="4" fill="#082F49" stroke="#0891B2"/><text x="1319" y="691" text-anchor="middle">nullifier</text>
+      <rect x="1382" y="678" width="106" height="18" rx="4" fill="#082F49" stroke="#0891B2"/><text x="1435" y="691" text-anchor="middle">note</text>
+    </g>
+
+    <g id="hush-state-continuity" stroke="#0891B2" stroke-width="1.2">
+      <line x1="1140" y1="687" x2="1150" y2="687"/><line x1="1256" y1="687" x2="1266" y2="687"/><line x1="1372" y1="687" x2="1382" y2="687"/>
+    </g>
+
+    <g id="hush-scoped-receipt-aperture">
+      <rect x="1498" y="584" width="22" height="114" rx="4" fill="#082F49" stroke="#67E8F9"/>
+      <line x1="1488" y1="640" x2="1498" y2="640" stroke="#67E8F9" stroke-width="1.2"/>
+      <path d="M1520 640 C1528 640,1534 642,1538 646" stroke="#67E8F9" stroke-width="1.2" stroke-dasharray="3 3"/>
+    </g>
+
+    <text x="844" y="772" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="600" fill="#67E8F9">Private state grows with time</text>
+  </g>
+</svg>
