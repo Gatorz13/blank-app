@@ -1,108 +1,48 @@
-# Hush Homepage Killer Visual Spec (Refined)
+# Hush Killer Visual Spec (3-second Read Version)
 
-## Objective
-Demonstrate a single high-value proposition with institutional clarity:
+## Core message
+**Same payment volume. Different visibility.**
 
-- **Same actors and same payment throughput** on both rails.
-- **Public rails**: relationship graph and metadata inference surface compound over time.
-- **Hush**: system activity compounds private state, while disclosure stays scoped.
+- Left: transparent rails compound an inferable relationship graph.
+- Right: Hush compounds private state with scoped disclosure.
 
-## Assets
+## Asset
 - `landing/client/public/visuals/hush-killer-visual.svg`
-- `design/hush-killer-visual-spec.md`
 
-## Composition (Desktop 1600×900)
+## What changed in this refinement
+- Reduced on-canvas copy to headline, panel labels, actor names (once), and two short outcomes.
+- Removed legends, large explanatory callouts, and process-label clusters.
+- Increased visual hierarchy: larger headline, stronger panel labels, cleaner spacing.
+- Kept temporal readability with explicit `t0→t4` columns on both sides.
 
-### 1) Hierarchy
-- Shared headline anchors the comparison first.
-- Two symmetric panels support direct, investor-grade side-by-side reading.
-- Clear top-level labels: **Public Rails** vs **Hush**.
+## Composition
+1. **Shared timeline scaffolding**
+   - Epoch columns `t0→t4` on both sides.
+   - Identical actor rows and equal transaction line density.
 
-### 2) Temporal clarity
-- Both panels include explicit epoch columns `t0 → t4` with column banding.
-- Column banding gets progressively stronger to emphasize time and accumulation.
-- Transaction paths cross all epochs to signal equivalent ongoing volume.
+2. **Public Rails side**
+   - Repeated payment paths.
+   - Layered graph-density links that increase by epoch.
+   - Red leakage tendrils exiting to external points.
+   - Outcome line: inferability grows with time.
 
-### 3) Shared actor parity
-Same actor row appears on both sides, same order:
-- issuer
-- Alice
-- Bob
-- merchant
-- payroll
-- treasury
-- auditor
+3. **Hush side**
+   - Same payment throughput motif.
+   - Private state rows (`note`, `cm`, `nf`) that accumulate by epoch.
+   - State continuity links across epochs.
+   - One scoped auditor receipt.
+   - Outcome line: private state grows with time.
 
-## Public Rails side behavior
-
-### What increases over time
-1. Baseline payment paths (constant throughput)
-2. Cross-epoch relationship links (density increases by epoch group)
-3. Metadata leakage branches in red
-4. Inference-risk index bars (`t0` to `t4`) that visibly grow
-
-### Inferable metadata labels
-- balance
-- timing
-- counterparties
-- frequency
-- settlement
-
-### Interpretation
-Even without payload decryption, repeated transparent edges and metadata cadence create a progressively inferable payment graph.
-
-## Hush side behavior
-
-### What increases over time
-1. Baseline payment paths (same throughput as left)
-2. Epoch state objects (`note_*`, `cm_*`, `nf_*`) with continuity links
-3. Operational system lane (`proof gen → state root → commit → nullify → finalize`)
-4. One scoped auditor receipt as selective disclosure
-
-### Interpretation
-Activity remains high and system-like, but external visibility accumulates as controlled state transitions rather than public relationship topology.
-
-## Style constraints (implemented)
-- Background: `#0B0F14`
-- Teal accent: `#0891b2`
-- Red leakage only: `#ef4444`
-- Text: white/muted gray/cyan only
+## Visual constraints honored
 - Flat vectors only
-- No gradients / no glow / no blur / no 3D
+- Background `#0B0F14`
+- Teal accent `#0891b2`
+- Red leakage `#ef4444`
+- White/muted gray/cyan text only
+- No gradients / glow / blur / 3D / decorative effects
 
-## SVG group architecture
-Top-level:
-- `canvas`
-- `header`
-- `panels`
-- `temporal-rails`
-- `actors`
-- `public-rails-side`
-- `hush-side`
-- `legend`
-
-Animation-ready subgroups:
-- `public-transaction-volume`
-- `public-relationship-accumulation`
-- `metadata-leakage`
-- `inference-risk-index`
-- `private-state-system`
-- `state-transition-bus`
-- `system-lane`
-- `scoped-auditor-receipt`
-
-## Rive transition plan (3–4 states)
-State machine: `VisibilityComparison`
-
-1. **State A — Throughput parity**
-   - Draw both sides’ payment paths together (t0→t1).
-2. **State B — Public inferability compounding**
-   - Reveal epoch-group relationship links + red leakage + risk index growth.
-3. **State C — Private state compounding**
-   - Step reveal `note/cm/nf` columns and transition bus.
-4. **State D — Scoped disclosure event**
-   - Animate receipt path to auditor only; keep global graph hidden.
-
-## Notes for implementation
-- Asset is intentionally diagrammatic and avoids decorative motifs.
-- Spacing prioritizes label legibility and timeline readability for future responsive adaptation.
+## Rive transitions (3–4)
+1. Throughput parity appears on both sides.
+2. Public graph density + red leakage compounds.
+3. Hush private state blocks and links compound.
+4. Scoped auditor receipt toggles in.
