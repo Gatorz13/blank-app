@@ -1,49 +1,56 @@
-# Hush Killer Visual Spec (Structure Divergence Refinement)
+# Hush Homepage Killer Visual Spec (Rebuilt)
 
-## Core message
-**Same payment activity. Different visible structure.**
+## Message
+**Same payment volume. Different visibility.**
 
-- **Public Rails:** repeated transfers resolve into an exposed, readable relationship graph.
-- **Hush:** repeated transfers resolve into private state accumulation (notes, commitments, nullifiers) with scoped receipts.
+Public rails convert repeated payments into inferable financial intelligence.
+Hush preserves the same payment activity as private state and reveals only scoped receipts.
 
 ## Asset
 - `landing/client/public/visuals/hush-killer-visual.svg`
 
-## Key refinement in this version
-The two panels no longer share the same visual grammar.
-
-- Left uses **actor-to-actor graph topology** with increasing cluster density and leakage endpoints.
-- Right uses **batch/state topology** (ingress, epoch batches, private objects, continuity links, scoped receipt), avoiding a recolored public graph pattern.
-
 ## Composition
-1. **Shared constants (for fair comparison)**
-   - Same actor set.
-   - Same epoch timeline (`t0→t4`).
-   - Same transaction activity volume motif.
+- Two large panels: **Public Rails** (left), **Hush** (right).
+- Same payment pulse count enters both systems at the top of each panel.
+- Left resolves into an exposed graph + red leakage endpoints.
+- Right resolves into private state lanes + state object stack (`note`, `commitment`, `nullifier`) + one scoped receipt.
+- Bottom outcomes:
+  - `Public graph grows with time`
+  - `Private state grows with time`
 
-2. **Public Rails panel**
-   - Dense transfer edges + densification overlays.
-   - Cluster envelopes intensify over time.
-   - Red leakage paths terminate at external endpoints.
-   - Outcome: exposed relationship graph compounds.
+## Structural divergence (intentional)
+- **Public side visual grammar:** network graph topology, clustering, outward leakage.
+- **Hush side visual grammar:** containment + lane batching + private object accumulation.
+- This avoids a mirrored/recolored chart and creates immediate outcome contrast.
 
-3. **Hush panel**
-   - Activity enters epoch batch lanes.
-   - Equal per-epoch activity shown as tick stacks.
-   - State resolves into `note`, `cm`, `nf` objects with continuity links.
-   - Scoped receipt shown without exposing full graph.
-   - Outcome: private state compounds while relationship graph remains non-public.
+## SVG group map (animation-ready)
+- `canvas`
+- `header`
+- `panels`
+- `shared-payment-input`
+- `public-rails-side`
+  - `public-relationship-graph`
+  - `public-graph-nodes`
+  - `public-cluster-emphasis`
+  - `metadata-leakage`
+  - `leakage-endpoints`
+- `hush-side`
+  - `hush-private-engine`
+  - `hush-activity-lanes`
+  - `hush-pulse-ticks`
+  - `private-state-stack`
+  - `state-continuity`
+  - `scoped-receipt`
 
 ## Style constraints honored
-- Flat vectors only
 - Background `#0B0F14`
-- Teal accent `#0891b2`
-- Red leakage `#ef4444`
-- White / muted gray / cyan text only
-- No gradients, glow, blur, 3D, or decorative effects
+- Teal `#0891b2`
+- Red leakage only `#ef4444`
+- Flat vector only
+- No charts, legends, report boxes, gradients, glow, blur, or 3D
 
 ## Rive transitions (3–4)
-1. Show equal activity baseline in both panels.
-2. Public panel densifies + leakage endpoints activate.
-3. Hush panel batch lanes fill and private objects accumulate.
-4. Scoped receipt appears as selective disclosure.
+1. Payment pulses enter both panels equally.
+2. Public graph densifies and leakage endpoints activate.
+3. Hush lanes fill and private state stack accumulates.
+4. Scoped receipt appears on demand.

@@ -1,135 +1,116 @@
 <svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <title>Same Payment Activity, Different Visible Structure</title>
-  <desc>Public rails expose a readable relationship graph; Hush resolves activity into private state objects.</desc>
+  <title>Same payment volume. Different visibility.</title>
+  <desc>Identical payment pulses enter both systems; public rails expose graph intelligence while Hush accumulates private state with scoped disclosure.</desc>
 
   <g id="canvas">
     <rect width="1600" height="900" fill="#0B0F14"/>
   </g>
 
   <g id="header">
-    <text x="800" y="64" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="36" font-weight="700" fill="#F8FAFC">Same Payment Activity. Different Visible Structure.</text>
-    <text x="800" y="94" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="15" fill="#94A3B8">Public Rails expose relationships. Hush accumulates private state.</text>
+    <text x="800" y="64" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="700" fill="#F8FAFC">Same payment volume. Different visibility.</text>
+    <text x="800" y="96" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="15" fill="#94A3B8">Public rails turn payments into financial intelligence. Hush keeps settlement private and disclosure scoped.</text>
   </g>
 
   <g id="panels">
-    <rect x="56" y="126" width="728" height="710" rx="12" fill="#0D131A" stroke="#374151"/>
-    <rect x="816" y="126" width="728" height="710" rx="12" fill="#0C1519" stroke="#0E7490"/>
-    <text x="84" y="164" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="600" fill="#F8FAFC">Public Rails</text>
-    <text x="844" y="164" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="600" fill="#E0F2FE">Hush</text>
+    <rect x="56" y="132" width="728" height="680" rx="14" fill="#0E141B" stroke="#334155"/>
+    <rect x="816" y="132" width="728" height="680" rx="14" fill="#0C1519" stroke="#0E7490"/>
+    <text x="84" y="172" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="600" fill="#F8FAFC">Public Rails</text>
+    <text x="844" y="172" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="600" fill="#E0F2FE">Hush</text>
   </g>
 
-  <g id="timelines" font-family="Inter, Arial, sans-serif" font-size="11">
-    <g id="left-time">
-      <rect x="176" y="202" width="106" height="548" fill="#111827"/>
-      <rect x="282" y="202" width="106" height="548" fill="#131A23"/>
-      <rect x="388" y="202" width="106" height="548" fill="#151D27"/>
-      <rect x="494" y="202" width="106" height="548" fill="#18212D"/>
-      <rect x="600" y="202" width="106" height="548" fill="#1B2734"/>
-      <text x="229" y="191" text-anchor="middle" fill="#64748B">t0</text><text x="335" y="191" text-anchor="middle" fill="#64748B">t1</text><text x="441" y="191" text-anchor="middle" fill="#64748B">t2</text><text x="547" y="191" text-anchor="middle" fill="#64748B">t3</text><text x="653" y="191" text-anchor="middle" fill="#64748B">t4</text>
+  <g id="shared-payment-input">
+    <g id="left-input-pulses" fill="#CBD5E1">
+      <circle cx="110" cy="242" r="5"/><circle cx="128" cy="242" r="5"/><circle cx="146" cy="242" r="5"/><circle cx="164" cy="242" r="5"/><circle cx="182" cy="242" r="5"/><circle cx="200" cy="242" r="5"/>
     </g>
-    <g id="right-time">
-      <rect x="936" y="202" width="106" height="548" fill="#08232D"/>
-      <rect x="1042" y="202" width="106" height="548" fill="#082833"/>
-      <rect x="1148" y="202" width="106" height="548" fill="#092D39"/>
-      <rect x="1254" y="202" width="106" height="548" fill="#0A3240"/>
-      <rect x="1360" y="202" width="106" height="548" fill="#0B3847"/>
-      <text x="989" y="191" text-anchor="middle" fill="#67E8F9">t0</text><text x="1095" y="191" text-anchor="middle" fill="#67E8F9">t1</text><text x="1201" y="191" text-anchor="middle" fill="#67E8F9">t2</text><text x="1307" y="191" text-anchor="middle" fill="#67E8F9">t3</text><text x="1413" y="191" text-anchor="middle" fill="#67E8F9">t4</text>
+    <g id="right-input-pulses" fill="#67E8F9">
+      <circle cx="870" cy="242" r="5"/><circle cx="888" cy="242" r="5"/><circle cx="906" cy="242" r="5"/><circle cx="924" cy="242" r="5"/><circle cx="942" cy="242" r="5"/><circle cx="960" cy="242" r="5"/>
     </g>
-  </g>
-
-  <g id="actor-rows" font-family="Inter, Arial, sans-serif" font-size="13" fill="#E2E8F0">
-    <text x="86" y="258">issuer</text><text x="86" y="318">Alice</text><text x="86" y="378">Bob</text><text x="86" y="438">merchant</text><text x="86" y="498">payroll</text><text x="86" y="558">treasury</text><text x="86" y="618">auditor</text>
-    <g id="left-nodes" stroke="#94A3B8" fill="#111827">
-      <circle cx="160" cy="254" r="8"/><circle cx="160" cy="314" r="8"/><circle cx="160" cy="374" r="8"/><circle cx="160" cy="434" r="8"/><circle cx="160" cy="494" r="8"/><circle cx="160" cy="554" r="8"/><circle cx="160" cy="614" r="8"/>
-    </g>
-    <g id="right-nodes" stroke="#67E8F9" fill="#083344">
-      <circle cx="920" cy="254" r="8"/><circle cx="920" cy="314" r="8"/><circle cx="920" cy="374" r="8"/><circle cx="920" cy="434" r="8"/><circle cx="920" cy="494" r="8"/><circle cx="920" cy="554" r="8"/><circle cx="920" cy="614" r="8"/>
-    </g>
+    <line x1="206" y1="242" x2="258" y2="242" stroke="#CBD5E1" stroke-width="1.4"/>
+    <line x1="966" y1="242" x2="1018" y2="242" stroke="#67E8F9" stroke-width="1.4"/>
   </g>
 
   <g id="public-rails-side">
-    <g id="public-activity-links" stroke="#CBD5E1" stroke-width="1.5">
-      <path d="M192 254 L282 314 L372 254 L462 314 L552 254 L642 314"/>
-      <path d="M192 314 L282 434 L372 374 L462 494 L552 434 L642 554"/>
-      <path d="M192 374 L282 434 L372 554 L462 614 L552 554 L642 614"/>
-      <path d="M192 434 L282 374 L372 434 L462 314 L552 374 L642 314"/>
-      <path d="M192 494 L282 314 L372 494 L462 374 L552 494 L642 434"/>
-      <path d="M192 554 L282 434 L372 314 L462 434 L552 314 L642 374"/>
-      <path d="M192 614 L282 554 L372 614 L462 554 L552 614 L642 554"/>
+    <g id="public-relationship-graph" stroke="#CBD5E1" stroke-width="1.2">
+      <line x1="258" y1="242" x2="328" y2="286"/><line x1="258" y1="242" x2="328" y2="354"/><line x1="258" y1="242" x2="328" y2="422"/>
+      <line x1="328" y1="286" x2="418" y2="248"/><line x1="328" y1="286" x2="418" y2="338"/><line x1="328" y1="286" x2="418" y2="438"/>
+      <line x1="328" y1="354" x2="418" y2="248"/><line x1="328" y1="354" x2="418" y2="338"/><line x1="328" y1="354" x2="418" y2="438"/><line x1="328" y1="354" x2="418" y2="528"/>
+      <line x1="328" y1="422" x2="418" y2="338"/><line x1="328" y1="422" x2="418" y2="438"/><line x1="328" y1="422" x2="418" y2="528"/>
+      <line x1="418" y1="248" x2="520" y2="292"/><line x1="418" y1="248" x2="520" y2="398"/>
+      <line x1="418" y1="338" x2="520" y2="292"/><line x1="418" y1="338" x2="520" y2="398"/><line x1="418" y1="338" x2="520" y2="500"/>
+      <line x1="418" y1="438" x2="520" y2="292"/><line x1="418" y1="438" x2="520" y2="398"/><line x1="418" y1="438" x2="520" y2="500"/>
+      <line x1="418" y1="528" x2="520" y2="398"/><line x1="418" y1="528" x2="520" y2="500"/>
+      <line x1="520" y1="292" x2="636" y2="262"/><line x1="520" y1="292" x2="636" y2="356"/><line x1="520" y1="292" x2="636" y2="468"/>
+      <line x1="520" y1="398" x2="636" y2="262"/><line x1="520" y1="398" x2="636" y2="356"/><line x1="520" y1="398" x2="636" y2="468"/><line x1="520" y1="398" x2="636" y2="560"/>
+      <line x1="520" y1="500" x2="636" y2="356"/><line x1="520" y1="500" x2="636" y2="468"/><line x1="520" y1="500" x2="636" y2="560"/>
     </g>
 
-    <g id="public-graph-densification" stroke="#94A3B8" stroke-width="1">
-      <g opacity="0.38"><line x1="282" y1="314" x2="282" y2="554"/><line x1="282" y1="374" x2="282" y2="614"/></g>
-      <g opacity="0.5"><line x1="372" y1="254" x2="462" y2="374"/><line x1="372" y1="374" x2="462" y2="614"/><line x1="372" y1="614" x2="462" y2="314"/></g>
-      <g opacity="0.64"><line x1="462" y1="314" x2="552" y2="434"/><line x1="462" y1="434" x2="552" y2="314"/><line x1="462" y1="614" x2="552" y2="554"/><line x1="462" y1="374" x2="552" y2="614"/></g>
-      <g opacity="0.78"><line x1="552" y1="314" x2="642" y2="494"/><line x1="552" y1="434" x2="642" y2="314"/><line x1="552" y1="554" x2="642" y2="614"/><line x1="552" y1="614" x2="642" y2="374"/></g>
+    <g id="public-graph-nodes" fill="#111827" stroke="#94A3B8">
+      <circle cx="258" cy="242" r="8"/>
+      <circle cx="328" cy="286" r="8"/><circle cx="328" cy="354" r="8"/><circle cx="328" cy="422" r="8"/>
+      <circle cx="418" cy="248" r="8"/><circle cx="418" cy="338" r="8"/><circle cx="418" cy="438" r="8"/><circle cx="418" cy="528" r="8"/>
+      <circle cx="520" cy="292" r="8"/><circle cx="520" cy="398" r="8"/><circle cx="520" cy="500" r="8"/>
+      <circle cx="636" cy="262" r="8"/><circle cx="636" cy="356" r="8"/><circle cx="636" cy="468" r="8"/><circle cx="636" cy="560" r="8"/>
     </g>
 
-    <g id="public-clusters" stroke="#EF4444" fill="none">
-      <ellipse cx="360" cy="434" rx="82" ry="132" stroke-width="1" opacity="0.28"/>
-      <ellipse cx="468" cy="470" rx="94" ry="170" stroke-width="1.1" opacity="0.4"/>
-      <ellipse cx="578" cy="500" rx="96" ry="198" stroke-width="1.2" opacity="0.55"/>
-      <ellipse cx="638" cy="520" rx="70" ry="210" stroke-width="1.3" opacity="0.68"/>
+    <g id="public-cluster-emphasis" fill="none" stroke="#EF4444">
+      <ellipse cx="410" cy="390" rx="112" ry="182" stroke-width="1" opacity="0.35"/>
+      <ellipse cx="522" cy="410" rx="120" ry="214" stroke-width="1.2" opacity="0.52"/>
+      <ellipse cx="636" cy="420" rx="88" ry="236" stroke-width="1.4" opacity="0.68"/>
     </g>
 
-    <g id="metadata-leakage" stroke="#EF4444" stroke-width="1.2">
-      <path d="M642 254 C692 252,706 236,726 222"/>
-      <path d="M642 314 C696 314,710 300,726 292"/>
-      <path d="M642 374 C697 382,710 380,726 372"/>
-      <path d="M642 434 C697 448,710 456,726 466"/>
-      <path d="M642 494 C697 514,710 530,726 544"/>
-      <path d="M642 554 C697 580,710 606,726 626"/>
-      <path d="M642 614 C697 646,710 676,726 708"/>
+    <g id="metadata-leakage" stroke="#EF4444" stroke-width="1.3">
+      <path d="M636 262 C700 248, 724 220, 748 206"/>
+      <path d="M636 356 C700 350, 724 332, 748 322"/>
+      <path d="M636 468 C700 478, 724 490, 748 506"/>
+      <path d="M636 560 C700 592, 724 626, 748 654"/>
     </g>
 
     <g id="leakage-endpoints" fill="#111827" stroke="#EF4444">
-      <rect x="732" y="210" width="44" height="20" rx="4"/><rect x="732" y="282" width="44" height="20" rx="4"/><rect x="732" y="362" width="44" height="20" rx="4"/>
-      <rect x="732" y="456" width="44" height="20" rx="4"/><rect x="732" y="534" width="44" height="20" rx="4"/><rect x="732" y="616" width="44" height="20" rx="4"/><rect x="732" y="698" width="44" height="20" rx="4"/>
+      <circle cx="756" cy="202" r="9"/><circle cx="756" cy="318" r="9"/><circle cx="756" cy="510" r="9"/><circle cx="756" cy="658" r="9"/>
     </g>
 
-    <text x="84" y="742" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="600" fill="#FCA5A5">Exposed relationship graph compounds</text>
+    <text x="84" y="772" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="600" fill="#FCA5A5">Public graph grows with time</text>
   </g>
 
   <g id="hush-side">
-    <g id="activity-ingress" stroke="#67E8F9" stroke-width="1.2" opacity="0.9">
-      <line x1="928" y1="254" x2="970" y2="254"/><line x1="928" y1="314" x2="970" y2="314"/><line x1="928" y1="374" x2="970" y2="374"/>
-      <line x1="928" y1="434" x2="970" y2="434"/><line x1="928" y1="494" x2="970" y2="494"/><line x1="928" y1="554" x2="970" y2="554"/><line x1="928" y1="614" x2="970" y2="614"/>
+    <g id="hush-private-engine" fill="#082F49" stroke="#0891B2">
+      <rect x="1018" y="212" width="472" height="428" rx="12"/>
     </g>
 
-    <g id="epoch-batches" fill="#082F49" stroke="#0891B2">
-      <rect x="972" y="238" width="58" height="392" rx="6"/>
-      <rect x="1078" y="238" width="58" height="392" rx="6"/>
-      <rect x="1184" y="238" width="58" height="392" rx="6"/>
-      <rect x="1290" y="238" width="58" height="392" rx="6"/>
-      <rect x="1396" y="238" width="58" height="392" rx="6"/>
+    <g id="hush-activity-lanes" fill="#0B3A4A" stroke="#0891B2">
+      <rect x="1040" y="236" width="66" height="376" rx="8"/>
+      <rect x="1126" y="236" width="66" height="376" rx="8"/>
+      <rect x="1212" y="236" width="66" height="376" rx="8"/>
+      <rect x="1298" y="236" width="66" height="376" rx="8"/>
+      <rect x="1384" y="236" width="66" height="376" rx="8"/>
     </g>
 
-    <g id="batch-activity-ticks" fill="#67E8F9">
-      <rect x="986" y="260" width="30" height="6" rx="2"/><rect x="986" y="304" width="30" height="6" rx="2"/><rect x="986" y="348" width="30" height="6" rx="2"/><rect x="986" y="392" width="30" height="6" rx="2"/><rect x="986" y="436" width="30" height="6" rx="2"/><rect x="986" y="480" width="30" height="6" rx="2"/><rect x="986" y="524" width="30" height="6" rx="2"/>
-      <rect x="1092" y="260" width="30" height="6" rx="2"/><rect x="1092" y="304" width="30" height="6" rx="2"/><rect x="1092" y="348" width="30" height="6" rx="2"/><rect x="1092" y="392" width="30" height="6" rx="2"/><rect x="1092" y="436" width="30" height="6" rx="2"/><rect x="1092" y="480" width="30" height="6" rx="2"/><rect x="1092" y="524" width="30" height="6" rx="2"/>
-      <rect x="1198" y="260" width="30" height="6" rx="2"/><rect x="1198" y="304" width="30" height="6" rx="2"/><rect x="1198" y="348" width="30" height="6" rx="2"/><rect x="1198" y="392" width="30" height="6" rx="2"/><rect x="1198" y="436" width="30" height="6" rx="2"/><rect x="1198" y="480" width="30" height="6" rx="2"/><rect x="1198" y="524" width="30" height="6" rx="2"/>
-      <rect x="1304" y="260" width="30" height="6" rx="2"/><rect x="1304" y="304" width="30" height="6" rx="2"/><rect x="1304" y="348" width="30" height="6" rx="2"/><rect x="1304" y="392" width="30" height="6" rx="2"/><rect x="1304" y="436" width="30" height="6" rx="2"/><rect x="1304" y="480" width="30" height="6" rx="2"/><rect x="1304" y="524" width="30" height="6" rx="2"/>
-      <rect x="1410" y="260" width="30" height="6" rx="2"/><rect x="1410" y="304" width="30" height="6" rx="2"/><rect x="1410" y="348" width="30" height="6" rx="2"/><rect x="1410" y="392" width="30" height="6" rx="2"/><rect x="1410" y="436" width="30" height="6" rx="2"/><rect x="1410" y="480" width="30" height="6" rx="2"/><rect x="1410" y="524" width="30" height="6" rx="2"/>
+    <g id="hush-pulse-ticks" fill="#67E8F9">
+      <rect x="1056" y="262" width="34" height="6" rx="2"/><rect x="1056" y="306" width="34" height="6" rx="2"/><rect x="1056" y="350" width="34" height="6" rx="2"/><rect x="1056" y="394" width="34" height="6" rx="2"/><rect x="1056" y="438" width="34" height="6" rx="2"/><rect x="1056" y="482" width="34" height="6" rx="2"/><rect x="1056" y="526" width="34" height="6" rx="2"/>
+      <rect x="1142" y="262" width="34" height="6" rx="2"/><rect x="1142" y="306" width="34" height="6" rx="2"/><rect x="1142" y="350" width="34" height="6" rx="2"/><rect x="1142" y="394" width="34" height="6" rx="2"/><rect x="1142" y="438" width="34" height="6" rx="2"/><rect x="1142" y="482" width="34" height="6" rx="2"/><rect x="1142" y="526" width="34" height="6" rx="2"/>
+      <rect x="1228" y="262" width="34" height="6" rx="2"/><rect x="1228" y="306" width="34" height="6" rx="2"/><rect x="1228" y="350" width="34" height="6" rx="2"/><rect x="1228" y="394" width="34" height="6" rx="2"/><rect x="1228" y="438" width="34" height="6" rx="2"/><rect x="1228" y="482" width="34" height="6" rx="2"/><rect x="1228" y="526" width="34" height="6" rx="2"/>
+      <rect x="1314" y="262" width="34" height="6" rx="2"/><rect x="1314" y="306" width="34" height="6" rx="2"/><rect x="1314" y="350" width="34" height="6" rx="2"/><rect x="1314" y="394" width="34" height="6" rx="2"/><rect x="1314" y="438" width="34" height="6" rx="2"/><rect x="1314" y="482" width="34" height="6" rx="2"/><rect x="1314" y="526" width="34" height="6" rx="2"/>
+      <rect x="1400" y="262" width="34" height="6" rx="2"/><rect x="1400" y="306" width="34" height="6" rx="2"/><rect x="1400" y="350" width="34" height="6" rx="2"/><rect x="1400" y="394" width="34" height="6" rx="2"/><rect x="1400" y="438" width="34" height="6" rx="2"/><rect x="1400" y="482" width="34" height="6" rx="2"/><rect x="1400" y="526" width="34" height="6" rx="2"/>
     </g>
 
-    <g id="private-state-objects" font-family="JetBrains Mono, Inter, monospace" font-size="10" fill="#CFFAFE">
-      <rect x="972" y="652" width="58" height="16" rx="3" fill="#082F49" stroke="#0891B2"/><text x="1001" y="663" text-anchor="middle">note</text>
-      <rect x="1078" y="652" width="58" height="16" rx="3" fill="#082F49" stroke="#0891B2"/><text x="1107" y="663" text-anchor="middle">cm</text>
-      <rect x="1184" y="652" width="58" height="16" rx="3" fill="#082F49" stroke="#0891B2"/><text x="1213" y="663" text-anchor="middle">nf</text>
-      <rect x="1290" y="652" width="58" height="16" rx="3" fill="#082F49" stroke="#0891B2"/><text x="1319" y="663" text-anchor="middle">note</text>
-      <rect x="1396" y="652" width="58" height="16" rx="3" fill="#082F49" stroke="#0891B2"/><text x="1425" y="663" text-anchor="middle">cm</text>
+    <g id="private-state-stack" font-family="JetBrains Mono, Inter, monospace" font-size="10" fill="#CFFAFE">
+      <rect x="1040" y="666" width="84" height="18" rx="4" fill="#082F49" stroke="#0891B2"/><text x="1082" y="678" text-anchor="middle">note</text>
+      <rect x="1134" y="666" width="84" height="18" rx="4" fill="#082F49" stroke="#0891B2"/><text x="1176" y="678" text-anchor="middle">commitment</text>
+      <rect x="1228" y="666" width="84" height="18" rx="4" fill="#082F49" stroke="#0891B2"/><text x="1270" y="678" text-anchor="middle">nullifier</text>
+      <rect x="1322" y="666" width="84" height="18" rx="4" fill="#082F49" stroke="#0891B2"/><text x="1364" y="678" text-anchor="middle">note</text>
+      <rect x="1416" y="666" width="84" height="18" rx="4" fill="#082F49" stroke="#0891B2"/><text x="1458" y="678" text-anchor="middle">commitment</text>
     </g>
 
-    <g id="state-continuity" stroke="#0891B2" stroke-width="1.1">
-      <line x1="1030" y1="660" x2="1078" y2="660"/><line x1="1136" y1="660" x2="1184" y2="660"/><line x1="1242" y1="660" x2="1290" y2="660"/><line x1="1348" y1="660" x2="1396" y2="660"/>
+    <g id="state-continuity" stroke="#0891B2" stroke-width="1.2">
+      <line x1="1124" y1="675" x2="1134" y2="675"/><line x1="1218" y1="675" x2="1228" y2="675"/><line x1="1312" y1="675" x2="1322" y2="675"/><line x1="1406" y1="675" x2="1416" y2="675"/>
     </g>
 
     <g id="scoped-receipt">
-      <path d="M1425 660 C1450 650,1470 628,1488 604" stroke="#67E8F9" stroke-width="1.2" stroke-dasharray="4 3"/>
-      <rect x="1478" y="580" width="58" height="24" rx="4" fill="#082F49" stroke="#67E8F9"/>
-      <text x="1507" y="595" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="9.5" fill="#CFFAFE">receipt</text>
+      <path d="M1458 675 C1490 666, 1514 642, 1528 614" stroke="#67E8F9" stroke-width="1.2" stroke-dasharray="4 3"/>
+      <rect x="1500" y="588" width="38" height="24" rx="4" fill="#082F49" stroke="#67E8F9"/>
+      <text x="1519" y="603" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="9.5" fill="#CFFAFE">receipt</text>
     </g>
 
-    <text x="844" y="742" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="600" fill="#67E8F9">Private state compounds, graph stays dark</text>
+    <text x="844" y="772" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="600" fill="#67E8F9">Private state grows with time</text>
   </g>
 </svg>
