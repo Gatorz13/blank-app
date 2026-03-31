@@ -1,48 +1,49 @@
-# Hush Killer Visual Spec (3-second Read Version)
+# Hush Killer Visual Spec (Structure Divergence Refinement)
 
 ## Core message
-**Same payment volume. Different visibility.**
+**Same payment activity. Different visible structure.**
 
-- Left: transparent rails compound an inferable relationship graph.
-- Right: Hush compounds private state with scoped disclosure.
+- **Public Rails:** repeated transfers resolve into an exposed, readable relationship graph.
+- **Hush:** repeated transfers resolve into private state accumulation (notes, commitments, nullifiers) with scoped receipts.
 
 ## Asset
 - `landing/client/public/visuals/hush-killer-visual.svg`
 
-## What changed in this refinement
-- Reduced on-canvas copy to headline, panel labels, actor names (once), and two short outcomes.
-- Removed legends, large explanatory callouts, and process-label clusters.
-- Increased visual hierarchy: larger headline, stronger panel labels, cleaner spacing.
-- Kept temporal readability with explicit `t0→t4` columns on both sides.
+## Key refinement in this version
+The two panels no longer share the same visual grammar.
+
+- Left uses **actor-to-actor graph topology** with increasing cluster density and leakage endpoints.
+- Right uses **batch/state topology** (ingress, epoch batches, private objects, continuity links, scoped receipt), avoiding a recolored public graph pattern.
 
 ## Composition
-1. **Shared timeline scaffolding**
-   - Epoch columns `t0→t4` on both sides.
-   - Identical actor rows and equal transaction line density.
+1. **Shared constants (for fair comparison)**
+   - Same actor set.
+   - Same epoch timeline (`t0→t4`).
+   - Same transaction activity volume motif.
 
-2. **Public Rails side**
-   - Repeated payment paths.
-   - Layered graph-density links that increase by epoch.
-   - Red leakage tendrils exiting to external points.
-   - Outcome line: inferability grows with time.
+2. **Public Rails panel**
+   - Dense transfer edges + densification overlays.
+   - Cluster envelopes intensify over time.
+   - Red leakage paths terminate at external endpoints.
+   - Outcome: exposed relationship graph compounds.
 
-3. **Hush side**
-   - Same payment throughput motif.
-   - Private state rows (`note`, `cm`, `nf`) that accumulate by epoch.
-   - State continuity links across epochs.
-   - One scoped auditor receipt.
-   - Outcome line: private state grows with time.
+3. **Hush panel**
+   - Activity enters epoch batch lanes.
+   - Equal per-epoch activity shown as tick stacks.
+   - State resolves into `note`, `cm`, `nf` objects with continuity links.
+   - Scoped receipt shown without exposing full graph.
+   - Outcome: private state compounds while relationship graph remains non-public.
 
-## Visual constraints honored
+## Style constraints honored
 - Flat vectors only
 - Background `#0B0F14`
 - Teal accent `#0891b2`
 - Red leakage `#ef4444`
-- White/muted gray/cyan text only
-- No gradients / glow / blur / 3D / decorative effects
+- White / muted gray / cyan text only
+- No gradients, glow, blur, 3D, or decorative effects
 
 ## Rive transitions (3–4)
-1. Throughput parity appears on both sides.
-2. Public graph density + red leakage compounds.
-3. Hush private state blocks and links compound.
-4. Scoped auditor receipt toggles in.
+1. Show equal activity baseline in both panels.
+2. Public panel densifies + leakage endpoints activate.
+3. Hush panel batch lanes fill and private objects accumulate.
+4. Scoped receipt appears as selective disclosure.

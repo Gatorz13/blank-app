@@ -1,14 +1,14 @@
 <svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <title>Same Payment Volume, Different Visibility</title>
-  <desc>Public rails accumulate inferable graphs; Hush accumulates private state.</desc>
+  <title>Same Payment Activity, Different Visible Structure</title>
+  <desc>Public rails expose a readable relationship graph; Hush resolves activity into private state objects.</desc>
 
   <g id="canvas">
     <rect width="1600" height="900" fill="#0B0F14"/>
   </g>
 
   <g id="header">
-    <text x="800" y="64" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="36" font-weight="700" fill="#F8FAFC">Same Payment Volume. Different Visibility.</text>
-    <text x="800" y="94" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="15" fill="#94A3B8">Public rails leak relationships over time. Hush compounds private state.</text>
+    <text x="800" y="64" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="36" font-weight="700" fill="#F8FAFC">Same Payment Activity. Different Visible Structure.</text>
+    <text x="800" y="94" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="15" fill="#94A3B8">Public Rails expose relationships. Hush accumulates private state.</text>
   </g>
 
   <g id="panels">
@@ -25,11 +25,7 @@
       <rect x="388" y="202" width="106" height="548" fill="#151D27"/>
       <rect x="494" y="202" width="106" height="548" fill="#18212D"/>
       <rect x="600" y="202" width="106" height="548" fill="#1B2734"/>
-      <text x="229" y="191" text-anchor="middle" fill="#64748B">t0</text>
-      <text x="335" y="191" text-anchor="middle" fill="#64748B">t1</text>
-      <text x="441" y="191" text-anchor="middle" fill="#64748B">t2</text>
-      <text x="547" y="191" text-anchor="middle" fill="#64748B">t3</text>
-      <text x="653" y="191" text-anchor="middle" fill="#64748B">t4</text>
+      <text x="229" y="191" text-anchor="middle" fill="#64748B">t0</text><text x="335" y="191" text-anchor="middle" fill="#64748B">t1</text><text x="441" y="191" text-anchor="middle" fill="#64748B">t2</text><text x="547" y="191" text-anchor="middle" fill="#64748B">t3</text><text x="653" y="191" text-anchor="middle" fill="#64748B">t4</text>
     </g>
     <g id="right-time">
       <rect x="936" y="202" width="106" height="548" fill="#08232D"/>
@@ -37,36 +33,22 @@
       <rect x="1148" y="202" width="106" height="548" fill="#092D39"/>
       <rect x="1254" y="202" width="106" height="548" fill="#0A3240"/>
       <rect x="1360" y="202" width="106" height="548" fill="#0B3847"/>
-      <text x="989" y="191" text-anchor="middle" fill="#67E8F9">t0</text>
-      <text x="1095" y="191" text-anchor="middle" fill="#67E8F9">t1</text>
-      <text x="1201" y="191" text-anchor="middle" fill="#67E8F9">t2</text>
-      <text x="1307" y="191" text-anchor="middle" fill="#67E8F9">t3</text>
-      <text x="1413" y="191" text-anchor="middle" fill="#67E8F9">t4</text>
+      <text x="989" y="191" text-anchor="middle" fill="#67E8F9">t0</text><text x="1095" y="191" text-anchor="middle" fill="#67E8F9">t1</text><text x="1201" y="191" text-anchor="middle" fill="#67E8F9">t2</text><text x="1307" y="191" text-anchor="middle" fill="#67E8F9">t3</text><text x="1413" y="191" text-anchor="middle" fill="#67E8F9">t4</text>
     </g>
   </g>
 
   <g id="actor-rows" font-family="Inter, Arial, sans-serif" font-size="13" fill="#E2E8F0">
-    <g id="labels">
-      <text x="86" y="258">issuer</text>
-      <text x="86" y="318">Alice</text>
-      <text x="86" y="378">Bob</text>
-      <text x="86" y="438">merchant</text>
-      <text x="86" y="498">payroll</text>
-      <text x="86" y="558">treasury</text>
-      <text x="86" y="618">auditor</text>
-    </g>
+    <text x="86" y="258">issuer</text><text x="86" y="318">Alice</text><text x="86" y="378">Bob</text><text x="86" y="438">merchant</text><text x="86" y="498">payroll</text><text x="86" y="558">treasury</text><text x="86" y="618">auditor</text>
     <g id="left-nodes" stroke="#94A3B8" fill="#111827">
-      <circle cx="160" cy="254" r="8"/><circle cx="160" cy="314" r="8"/><circle cx="160" cy="374" r="8"/>
-      <circle cx="160" cy="434" r="8"/><circle cx="160" cy="494" r="8"/><circle cx="160" cy="554" r="8"/><circle cx="160" cy="614" r="8"/>
+      <circle cx="160" cy="254" r="8"/><circle cx="160" cy="314" r="8"/><circle cx="160" cy="374" r="8"/><circle cx="160" cy="434" r="8"/><circle cx="160" cy="494" r="8"/><circle cx="160" cy="554" r="8"/><circle cx="160" cy="614" r="8"/>
     </g>
     <g id="right-nodes" stroke="#67E8F9" fill="#083344">
-      <circle cx="920" cy="254" r="8"/><circle cx="920" cy="314" r="8"/><circle cx="920" cy="374" r="8"/>
-      <circle cx="920" cy="434" r="8"/><circle cx="920" cy="494" r="8"/><circle cx="920" cy="554" r="8"/><circle cx="920" cy="614" r="8"/>
+      <circle cx="920" cy="254" r="8"/><circle cx="920" cy="314" r="8"/><circle cx="920" cy="374" r="8"/><circle cx="920" cy="434" r="8"/><circle cx="920" cy="494" r="8"/><circle cx="920" cy="554" r="8"/><circle cx="920" cy="614" r="8"/>
     </g>
   </g>
 
   <g id="public-rails-side">
-    <g id="public-transaction-volume" stroke="#CBD5E1" stroke-width="1.5">
+    <g id="public-activity-links" stroke="#CBD5E1" stroke-width="1.5">
       <path d="M192 254 L282 314 L372 254 L462 314 L552 254 L642 314"/>
       <path d="M192 314 L282 434 L372 374 L462 494 L552 434 L642 554"/>
       <path d="M192 374 L282 434 L372 554 L462 614 L552 554 L642 614"/>
@@ -76,81 +58,78 @@
       <path d="M192 614 L282 554 L372 614 L462 554 L552 614 L642 554"/>
     </g>
 
-    <g id="public-graph-density" stroke="#94A3B8" stroke-width="1">
-      <g id="d1" opacity="0.35"><line x1="282" y1="314" x2="282" y2="554"/><line x1="282" y1="374" x2="282" y2="614"/></g>
-      <g id="d2" opacity="0.48"><line x1="372" y1="254" x2="462" y2="374"/><line x1="372" y1="374" x2="462" y2="614"/><line x1="372" y1="614" x2="462" y2="314"/></g>
-      <g id="d3" opacity="0.62"><line x1="462" y1="314" x2="552" y2="434"/><line x1="462" y1="434" x2="552" y2="314"/><line x1="462" y1="614" x2="552" y2="554"/><line x1="462" y1="374" x2="552" y2="614"/></g>
-      <g id="d4" opacity="0.76"><line x1="552" y1="314" x2="642" y2="494"/><line x1="552" y1="434" x2="642" y2="314"/><line x1="552" y1="554" x2="642" y2="614"/><line x1="552" y1="614" x2="642" y2="374"/></g>
+    <g id="public-graph-densification" stroke="#94A3B8" stroke-width="1">
+      <g opacity="0.38"><line x1="282" y1="314" x2="282" y2="554"/><line x1="282" y1="374" x2="282" y2="614"/></g>
+      <g opacity="0.5"><line x1="372" y1="254" x2="462" y2="374"/><line x1="372" y1="374" x2="462" y2="614"/><line x1="372" y1="614" x2="462" y2="314"/></g>
+      <g opacity="0.64"><line x1="462" y1="314" x2="552" y2="434"/><line x1="462" y1="434" x2="552" y2="314"/><line x1="462" y1="614" x2="552" y2="554"/><line x1="462" y1="374" x2="552" y2="614"/></g>
+      <g opacity="0.78"><line x1="552" y1="314" x2="642" y2="494"/><line x1="552" y1="434" x2="642" y2="314"/><line x1="552" y1="554" x2="642" y2="614"/><line x1="552" y1="614" x2="642" y2="374"/></g>
+    </g>
+
+    <g id="public-clusters" stroke="#EF4444" fill="none">
+      <ellipse cx="360" cy="434" rx="82" ry="132" stroke-width="1" opacity="0.28"/>
+      <ellipse cx="468" cy="470" rx="94" ry="170" stroke-width="1.1" opacity="0.4"/>
+      <ellipse cx="578" cy="500" rx="96" ry="198" stroke-width="1.2" opacity="0.55"/>
+      <ellipse cx="638" cy="520" rx="70" ry="210" stroke-width="1.3" opacity="0.68"/>
     </g>
 
     <g id="metadata-leakage" stroke="#EF4444" stroke-width="1.2">
-      <path d="M642 254 C692 252,706 236,724 222"/>
-      <path d="M642 314 C695 314,708 300,724 292"/>
-      <path d="M642 374 C696 380,708 378,724 372"/>
-      <path d="M642 434 C696 446,708 454,724 462"/>
-      <path d="M642 494 C696 510,708 526,724 538"/>
-      <path d="M642 554 C696 578,708 600,724 618"/>
-      <path d="M642 614 C696 640,708 666,724 698"/>
+      <path d="M642 254 C692 252,706 236,726 222"/>
+      <path d="M642 314 C696 314,710 300,726 292"/>
+      <path d="M642 374 C697 382,710 380,726 372"/>
+      <path d="M642 434 C697 448,710 456,726 466"/>
+      <path d="M642 494 C697 514,710 530,726 544"/>
+      <path d="M642 554 C697 580,710 606,726 626"/>
+      <path d="M642 614 C697 646,710 676,726 708"/>
     </g>
 
-    <g id="leak-points" fill="#EF4444">
-      <circle cx="730" cy="222" r="4"/><circle cx="730" cy="292" r="4"/><circle cx="730" cy="372" r="4"/>
-      <circle cx="730" cy="462" r="4"/><circle cx="730" cy="538" r="4"/><circle cx="730" cy="618" r="4"/><circle cx="730" cy="698" r="4"/>
+    <g id="leakage-endpoints" fill="#111827" stroke="#EF4444">
+      <rect x="732" y="210" width="44" height="20" rx="4"/><rect x="732" y="282" width="44" height="20" rx="4"/><rect x="732" y="362" width="44" height="20" rx="4"/>
+      <rect x="732" y="456" width="44" height="20" rx="4"/><rect x="732" y="534" width="44" height="20" rx="4"/><rect x="732" y="616" width="44" height="20" rx="4"/><rect x="732" y="698" width="44" height="20" rx="4"/>
     </g>
 
-    <g id="public-outcome">
-      <text x="84" y="742" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="600" fill="#FCA5A5">Inferable graph grows with time</text>
-    </g>
+    <text x="84" y="742" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="600" fill="#FCA5A5">Exposed relationship graph compounds</text>
   </g>
 
   <g id="hush-side">
-    <g id="hush-transaction-volume" stroke="#67E8F9" stroke-width="1.5" opacity="0.92">
-      <path d="M952 254 L1042 314 L1132 254 L1222 314 L1312 254 L1402 314"/>
-      <path d="M952 314 L1042 434 L1132 374 L1222 494 L1312 434 L1402 554"/>
-      <path d="M952 374 L1042 434 L1132 554 L1222 614 L1312 554 L1402 614"/>
-      <path d="M952 434 L1042 374 L1132 434 L1222 314 L1312 374 L1402 314"/>
-      <path d="M952 494 L1042 314 L1132 494 L1222 374 L1312 494 L1402 434"/>
-      <path d="M952 554 L1042 434 L1132 314 L1222 434 L1312 314 L1402 374"/>
-      <path d="M952 614 L1042 554 L1132 614 L1222 554 L1312 614 L1402 554"/>
+    <g id="activity-ingress" stroke="#67E8F9" stroke-width="1.2" opacity="0.9">
+      <line x1="928" y1="254" x2="970" y2="254"/><line x1="928" y1="314" x2="970" y2="314"/><line x1="928" y1="374" x2="970" y2="374"/>
+      <line x1="928" y1="434" x2="970" y2="434"/><line x1="928" y1="494" x2="970" y2="494"/><line x1="928" y1="554" x2="970" y2="554"/><line x1="928" y1="614" x2="970" y2="614"/>
     </g>
 
-    <g id="private-state-growth" font-family="JetBrains Mono, Inter, monospace" font-size="10" fill="#CFFAFE">
-      <g id="s1">
-        <rect x="1054" y="216" width="74" height="16" rx="3" fill="#082F49" stroke="#0891B2"/><text x="1091" y="227" text-anchor="middle">note</text>
-        <rect x="1054" y="236" width="74" height="16" rx="3" fill="#082F49" stroke="#0891B2"/><text x="1091" y="247" text-anchor="middle">cm</text>
-        <rect x="1054" y="256" width="74" height="16" rx="3" fill="#082F49" stroke="#0891B2"/><text x="1091" y="267" text-anchor="middle">nf</text>
-      </g>
-      <g id="s2">
-        <rect x="1160" y="216" width="74" height="16" rx="3" fill="#082F49" stroke="#0891B2"/><text x="1197" y="227" text-anchor="middle">note</text>
-        <rect x="1160" y="236" width="74" height="16" rx="3" fill="#082F49" stroke="#0891B2"/><text x="1197" y="247" text-anchor="middle">cm</text>
-        <rect x="1160" y="256" width="74" height="16" rx="3" fill="#082F49" stroke="#0891B2"/><text x="1197" y="267" text-anchor="middle">nf</text>
-      </g>
-      <g id="s3">
-        <rect x="1266" y="216" width="74" height="16" rx="3" fill="#082F49" stroke="#0891B2"/><text x="1303" y="227" text-anchor="middle">note</text>
-        <rect x="1266" y="236" width="74" height="16" rx="3" fill="#082F49" stroke="#0891B2"/><text x="1303" y="247" text-anchor="middle">cm</text>
-        <rect x="1266" y="256" width="74" height="16" rx="3" fill="#082F49" stroke="#0891B2"/><text x="1303" y="267" text-anchor="middle">nf</text>
-      </g>
-      <g id="s4">
-        <rect x="1372" y="216" width="74" height="16" rx="3" fill="#082F49" stroke="#0891B2"/><text x="1409" y="227" text-anchor="middle">note</text>
-        <rect x="1372" y="236" width="74" height="16" rx="3" fill="#082F49" stroke="#0891B2"/><text x="1409" y="247" text-anchor="middle">cm</text>
-        <rect x="1372" y="256" width="74" height="16" rx="3" fill="#082F49" stroke="#0891B2"/><text x="1409" y="267" text-anchor="middle">nf</text>
-      </g>
+    <g id="epoch-batches" fill="#082F49" stroke="#0891B2">
+      <rect x="972" y="238" width="58" height="392" rx="6"/>
+      <rect x="1078" y="238" width="58" height="392" rx="6"/>
+      <rect x="1184" y="238" width="58" height="392" rx="6"/>
+      <rect x="1290" y="238" width="58" height="392" rx="6"/>
+      <rect x="1396" y="238" width="58" height="392" rx="6"/>
     </g>
 
-    <g id="state-links" stroke="#0891B2" stroke-width="1.1">
-      <line x1="1128" y1="224" x2="1160" y2="224"/><line x1="1128" y1="244" x2="1160" y2="244"/><line x1="1128" y1="264" x2="1160" y2="264"/>
-      <line x1="1234" y1="224" x2="1266" y2="224"/><line x1="1234" y1="244" x2="1266" y2="244"/><line x1="1234" y1="264" x2="1266" y2="264"/>
-      <line x1="1340" y1="224" x2="1372" y2="224"/><line x1="1340" y1="244" x2="1372" y2="244"/><line x1="1340" y1="264" x2="1372" y2="264"/>
+    <g id="batch-activity-ticks" fill="#67E8F9">
+      <rect x="986" y="260" width="30" height="6" rx="2"/><rect x="986" y="304" width="30" height="6" rx="2"/><rect x="986" y="348" width="30" height="6" rx="2"/><rect x="986" y="392" width="30" height="6" rx="2"/><rect x="986" y="436" width="30" height="6" rx="2"/><rect x="986" y="480" width="30" height="6" rx="2"/><rect x="986" y="524" width="30" height="6" rx="2"/>
+      <rect x="1092" y="260" width="30" height="6" rx="2"/><rect x="1092" y="304" width="30" height="6" rx="2"/><rect x="1092" y="348" width="30" height="6" rx="2"/><rect x="1092" y="392" width="30" height="6" rx="2"/><rect x="1092" y="436" width="30" height="6" rx="2"/><rect x="1092" y="480" width="30" height="6" rx="2"/><rect x="1092" y="524" width="30" height="6" rx="2"/>
+      <rect x="1198" y="260" width="30" height="6" rx="2"/><rect x="1198" y="304" width="30" height="6" rx="2"/><rect x="1198" y="348" width="30" height="6" rx="2"/><rect x="1198" y="392" width="30" height="6" rx="2"/><rect x="1198" y="436" width="30" height="6" rx="2"/><rect x="1198" y="480" width="30" height="6" rx="2"/><rect x="1198" y="524" width="30" height="6" rx="2"/>
+      <rect x="1304" y="260" width="30" height="6" rx="2"/><rect x="1304" y="304" width="30" height="6" rx="2"/><rect x="1304" y="348" width="30" height="6" rx="2"/><rect x="1304" y="392" width="30" height="6" rx="2"/><rect x="1304" y="436" width="30" height="6" rx="2"/><rect x="1304" y="480" width="30" height="6" rx="2"/><rect x="1304" y="524" width="30" height="6" rx="2"/>
+      <rect x="1410" y="260" width="30" height="6" rx="2"/><rect x="1410" y="304" width="30" height="6" rx="2"/><rect x="1410" y="348" width="30" height="6" rx="2"/><rect x="1410" y="392" width="30" height="6" rx="2"/><rect x="1410" y="436" width="30" height="6" rx="2"/><rect x="1410" y="480" width="30" height="6" rx="2"/><rect x="1410" y="524" width="30" height="6" rx="2"/>
+    </g>
+
+    <g id="private-state-objects" font-family="JetBrains Mono, Inter, monospace" font-size="10" fill="#CFFAFE">
+      <rect x="972" y="652" width="58" height="16" rx="3" fill="#082F49" stroke="#0891B2"/><text x="1001" y="663" text-anchor="middle">note</text>
+      <rect x="1078" y="652" width="58" height="16" rx="3" fill="#082F49" stroke="#0891B2"/><text x="1107" y="663" text-anchor="middle">cm</text>
+      <rect x="1184" y="652" width="58" height="16" rx="3" fill="#082F49" stroke="#0891B2"/><text x="1213" y="663" text-anchor="middle">nf</text>
+      <rect x="1290" y="652" width="58" height="16" rx="3" fill="#082F49" stroke="#0891B2"/><text x="1319" y="663" text-anchor="middle">note</text>
+      <rect x="1396" y="652" width="58" height="16" rx="3" fill="#082F49" stroke="#0891B2"/><text x="1425" y="663" text-anchor="middle">cm</text>
+    </g>
+
+    <g id="state-continuity" stroke="#0891B2" stroke-width="1.1">
+      <line x1="1030" y1="660" x2="1078" y2="660"/><line x1="1136" y1="660" x2="1184" y2="660"/><line x1="1242" y1="660" x2="1290" y2="660"/><line x1="1348" y1="660" x2="1396" y2="660"/>
     </g>
 
     <g id="scoped-receipt">
-      <path d="M1312 614 C1360 614,1400 598,1432 572" stroke="#67E8F9" stroke-width="1.2" stroke-dasharray="4 3"/>
-      <rect x="1432" y="548" width="94" height="48" rx="6" fill="#082F49" stroke="#67E8F9"/>
-      <text x="1479" y="577" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="10" fill="#CFFAFE">auditor receipt</text>
+      <path d="M1425 660 C1450 650,1470 628,1488 604" stroke="#67E8F9" stroke-width="1.2" stroke-dasharray="4 3"/>
+      <rect x="1478" y="580" width="58" height="24" rx="4" fill="#082F49" stroke="#67E8F9"/>
+      <text x="1507" y="595" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="9.5" fill="#CFFAFE">receipt</text>
     </g>
 
-    <g id="hush-outcome">
-      <text x="844" y="742" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="600" fill="#67E8F9">Private state grows with time</text>
-    </g>
+    <text x="844" y="742" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="600" fill="#67E8F9">Private state compounds, graph stays dark</text>
   </g>
 </svg>
